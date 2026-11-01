@@ -25,13 +25,35 @@ def load_model_and_metrics():
     model_path = ROOT_DIR / "models" / "virality_classifier.pkl"
     metrics_path = ROOT_DIR / "models" / "model_metrics.json"
 
-    if not model_path.exists() or not metrics_path.exists():
-        from analysis.virality_model import train_virality_model
-        train_virality_model()
+    model = None
+    if model_path.exists():
+        try:
+            model = joblib.load(model_path)
+        except Exception:
+            model = None
 
-    model = joblib.load(model_path)
-    with open(metrics_path, "r", encoding="utf-8") as f:
-        metrics = json.load(f)
+    if model is None or not metrics_path.exists():
+        from analysis.virality_model import train_virality_model
+        metrics = train_virality_model()
+        try:
+            model = joblib.load(model_path)
+        except Exception:
+            # Fallback: lightweight direct fit in memory if disk pickle is blocked
+            parquet_path = ROOT_DIR / "data" / "processed" / "youtube_transformed.parquet"
+            df = pd.read_parquet(parquet_path)
+            from sklearn.ensemble import RandomForestClassifier
+            feature_cols = [
+                "category_id", "publish_hour", "publish_month", "tag_count",
+                "title_word_count", "title_char_length", "title_caps_ratio",
+                "title_sentiment_polarity", "like_to_view_ratio", "comment_to_view_ratio"
+            ]
+            X = df[feature_cols].fillna(0)
+            y = df["is_viral"]
+            model = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42).fit(X, y)
+    else:
+        with open(metrics_path, "r", encoding="utf-8") as f:
+            metrics = json.load(f)
+
     return model, metrics
 
 

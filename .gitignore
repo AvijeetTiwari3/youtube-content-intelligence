@@ -17,6 +17,9 @@ ENV/
 htmlcov/
 .ipynb_checkpoints/
 
+# Model Binaries (auto-trained in runtime environment to prevent OS pickle conflicts)
+models/*.pkl
+
 # Operating System
 .DS_Store
 Thumbs.db
