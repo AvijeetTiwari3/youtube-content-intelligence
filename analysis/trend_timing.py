@@ -9,10 +9,23 @@ import numpy as np
 import pandas as pd
 
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+
 def analyze_trend_timing(
-    parquet_path: str = "youtube-content-intelligence/data/processed/youtube_transformed.parquet",
-    output_dir: str = "youtube-content-intelligence/data/processed",
+    parquet_path: str = None,
+    output_dir: str = None,
 ) -> dict:
+    if parquet_path is None:
+        parquet_path = ROOT_DIR / "data" / "processed" / "youtube_transformed.parquet"
+    else:
+        parquet_path = Path(parquet_path)
+
+    if output_dir is None:
+        output_dir = ROOT_DIR / "data" / "processed"
+    else:
+        output_dir = Path(output_dir)
+
     print("Analyzing Trend Timing and Velocity Dynamics...")
     df = pd.read_parquet(parquet_path)
 

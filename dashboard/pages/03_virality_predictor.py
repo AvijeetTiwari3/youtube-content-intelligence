@@ -34,7 +34,9 @@ def load_model_and_metrics():
 
     if model is None or not metrics_path.exists():
         from analysis.virality_model import train_virality_model
-        metrics = train_virality_model()
+        parquet_file = ROOT_DIR / "data" / "processed" / "youtube_transformed.parquet"
+        model_folder = ROOT_DIR / "models"
+        metrics = train_virality_model(parquet_path=str(parquet_file), model_dir=str(model_folder))
         try:
             model = joblib.load(model_path)
         except Exception:

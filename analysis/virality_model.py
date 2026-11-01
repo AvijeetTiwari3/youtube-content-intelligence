@@ -13,11 +13,24 @@ from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 from sklearn.model_selection import train_test_split
 
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+
 def train_virality_model(
-    parquet_path: str = "youtube-content-intelligence/data/processed/youtube_transformed.parquet",
-    model_dir: str = "youtube-content-intelligence/models",
+    parquet_path: str = None,
+    model_dir: str = None,
 ) -> dict:
-    print("Training Machine Learning Virality Classifier...")
+    if parquet_path is None:
+        parquet_path = ROOT_DIR / "data" / "processed" / "youtube_transformed.parquet"
+    else:
+        parquet_path = Path(parquet_path)
+
+    if model_dir is None:
+        model_dir = ROOT_DIR / "models"
+    else:
+        model_dir = Path(model_dir)
+
+    print(f"Training Machine Learning Virality Classifier on {parquet_path}...")
     df = pd.read_parquet(parquet_path)
 
     # Features selected for pre-publish and early-signal prediction:
