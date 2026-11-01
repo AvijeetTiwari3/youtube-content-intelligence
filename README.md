@@ -8,7 +8,7 @@
 [![Statistics: SciPy](https://img.shields.io/badge/Stats-SciPy%20%7C%20Statsmodels-8CAAE6?logo=scipy&logoColor=white)](https://scipy.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Architected by Avijeet Tiwari** | *Senior Data Analyst Portfolio (FAANG / Google Standard)*  
+ 
 > A production-grade content analytics and predictive machine learning system analyzing **24,951 verified YouTube trending video snapshots**. Built with an automated relational SQLite warehouse, a 10-point statistical data governance framework, One-Way ANOVA cross-genre benchmarking, and a real-time ensemble ML virality classifier (**84.85% Accuracy, 0.9324 ROC-AUC**).
 
 ---
