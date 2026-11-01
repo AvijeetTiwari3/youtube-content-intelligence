@@ -1,0 +1,208 @@
+{
+  "anova": {
+    "f_statistic": 299.978,
+    "p_value": 0.0,
+    "is_statistically_significant": true
+  },
+  "ols_regression": {
+    "r_squared": 0.061,
+    "adj_r_squared": 0.0607,
+    "f_pvalue": 0.0,
+    "coefficients": {
+      "const": 12.5489,
+      "engagement_rate": 0.024,
+      "title_word_count": -0.0412,
+      "title_sentiment_polarity": 0.5452,
+      "tag_count": 0.0167,
+      "days_to_trend": -0.0011,
+      "title_caps_ratio": 0.5057
+    },
+    "p_values": {
+      "const": 0.0,
+      "engagement_rate": 0.0,
+      "title_word_count": 0.0,
+      "title_sentiment_polarity": 0.0,
+      "tag_count": 0.0,
+      "days_to_trend": 0.0,
+      "title_caps_ratio": 0.0
+    }
+  },
+  "category_rankings": [
+    {
+      "category_name": "Music",
+      "total_videos": 3588,
+      "median_views": 628069.5,
+      "mean_views": 2786288.7717391304,
+      "median_likes": 28456.0,
+      "median_comments": 1965.5,
+      "median_engagement_rate": 4.7616,
+      "mean_engagement_rate": 5.661458500557414,
+      "viral_ratio": 0.4049609810479376
+    },
+    {
+      "category_name": "Howto & Style",
+      "total_videos": 2445,
+      "median_views": 309109.0,
+      "mean_views": 652752.0703476482,
+      "median_likes": 12290.0,
+      "median_comments": 1079.0,
+      "median_engagement_rate": 4.726,
+      "mean_engagement_rate": 5.193799877300614,
+      "viral_ratio": 0.15460122699386503
+    },
+    {
+      "category_name": "Comedy",
+      "total_videos": 2097,
+      "median_views": 648565.0,
+      "mean_views": 1186591.205531712,
+      "median_likes": 23309.0,
+      "median_comments": 2022.0,
+      "median_engagement_rate": 4.4792,
+      "mean_engagement_rate": 5.169407486886027,
+      "viral_ratio": 0.41249403910348115
+    },
+    {
+      "category_name": "Education",
+      "total_videos": 1088,
+      "median_views": 357281.0,
+      "mean_views": 501833.7693014706,
+      "median_likes": 12395.5,
+      "median_comments": 1200.0,
+      "median_engagement_rate": 4.0325,
+      "mean_engagement_rate": 4.142016084558824,
+      "viral_ratio": 0.11397058823529412
+    },
+    {
+      "category_name": "People & Blogs",
+      "total_videos": 2015,
+      "median_views": 299149.0,
+      "mean_views": 1099297.5161290322,
+      "median_likes": 11762.0,
+      "median_comments": 1075.0,
+      "median_engagement_rate": 3.9847,
+      "mean_engagement_rate": 4.890232506203474,
+      "viral_ratio": 0.2531017369727047
+    },
+    {
+      "category_name": "Gaming",
+      "total_videos": 342,
+      "median_views": 640938.0,
+      "mean_views": 1228304.596491228,
+      "median_likes": 17778.0,
+      "median_comments": 2770.5,
+      "median_engagement_rate": 3.9643499999999996,
+      "mean_engagement_rate": 4.520787426900585,
+      "viral_ratio": 0.3508771929824561
+    },
+    {
+      "category_name": "Shows",
+      "total_videos": 16,
+      "median_views": 149911.0,
+      "mean_views": 127449.25,
+      "median_likes": 4327.5,
+      "median_comments": 1764.0,
+      "median_engagement_rate": 3.80445,
+      "mean_engagement_rate": 3.4269875,
+      "viral_ratio": 0.0
+    },
+    {
+      "category_name": "Pets & Animals",
+      "total_videos": 634,
+      "median_views": 315553.5,
+      "mean_views": 554893.6230283912,
+      "median_likes": 9616.5,
+      "median_comments": 803.0,
+      "median_engagement_rate": 3.80265,
+      "mean_engagement_rate": 4.020226498422713,
+      "viral_ratio": 0.14668769716088328
+    },
+    {
+      "category_name": "Nonprofits & Activism",
+      "total_videos": 48,
+      "median_views": 33214.5,
+      "mean_views": 3462796.5208333335,
+      "median_likes": 1316.0,
+      "median_comments": 64.0,
+      "median_engagement_rate": 3.6694,
+      "mean_engagement_rate": 4.709191666666666,
+      "viral_ratio": 0.1875
+    },
+    {
+      "category_name": "Science & Technology",
+      "total_videos": 1596,
+      "median_views": 393841.0,
+      "mean_views": 980412.5137844612,
+      "median_likes": 11967.5,
+      "median_comments": 1316.5,
+      "median_engagement_rate": 3.2683999999999997,
+      "mean_engagement_rate": 3.610643421052632,
+      "viral_ratio": 0.2424812030075188
+    },
+    {
+      "category_name": "Entertainment",
+      "total_videos": 5782,
+      "median_views": 398098.0,
+      "mean_views": 1387513.6978554134,
+      "median_likes": 8995.0,
+      "median_comments": 1006.0,
+      "median_engagement_rate": 2.5321,
+      "mean_engagement_rate": 3.3565910238671743,
+      "viral_ratio": 0.27464545140089935
+    },
+    {
+      "category_name": "Film & Animation",
+      "total_videos": 1428,
+      "median_views": 724988.5,
+      "mean_views": 2082823.9397759105,
+      "median_likes": 11765.0,
+      "median_comments": 1677.0,
+      "median_engagement_rate": 2.48075,
+      "mean_engagement_rate": 3.107451260504202,
+      "viral_ratio": 0.46148459383753504
+    },
+    {
+      "category_name": "Travel & Events",
+      "total_videos": 277,
+      "median_views": 369947.0,
+      "mean_views": 857767.4223826715,
+      "median_likes": 5946.0,
+      "median_comments": 1086.0,
+      "median_engagement_rate": 2.1689,
+      "mean_engagement_rate": 2.435334657039711,
+      "viral_ratio": 0.21660649819494585
+    },
+    {
+      "category_name": "News & Politics",
+      "total_videos": 1927,
+      "median_views": 144612.0,
+      "mean_views": 341719.04566683964,
+      "median_likes": 961.0,
+      "median_comments": 537.0,
+      "median_engagement_rate": 1.405,
+      "mean_engagement_rate": 1.8986623248572911,
+      "viral_ratio": 0.08095485210171251
+    },
+    {
+      "category_name": "Sports",
+      "total_videos": 1328,
+      "median_views": 308337.0,
+      "mean_views": 1364949.4292168675,
+      "median_likes": 4002.5,
+      "median_comments": 664.5,
+      "median_engagement_rate": 1.3902999999999999,
+      "mean_engagement_rate": 1.8001024096385543,
+      "viral_ratio": 0.25376506024096385
+    },
+    {
+      "category_name": "Autos & Vehicles",
+      "total_videos": 340,
+      "median_views": 356956.0,
+      "mean_views": 1412712.2852941176,
+      "median_likes": 3880.5,
+      "median_comments": 666.5,
+      "median_engagement_rate": 1.33565,
+      "mean_engagement_rate": 1.8928276470588237,
+      "viral_ratio": 0.2647058823529412
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "velocity": {
+    "within_24h_pct": 9.72,
+    "within_48h_pct": 22.67,
+    "within_72h_pct": 36.74,
+    "median_days_to_trend": 4.0,
+    "mean_days_to_trend": 21.63
+  },
+  "optimal_windows": [
+    {
+      "publish_day_name": "Monday",
+      "publish_hour": 21,
+      "median_engagement": 6.0582,
+      "total_videos": 124,
+      "viral_rate": 0.4435483870967742
+    },
+    {
+      "publish_day_name": "Saturday",
+      "publish_hour": 19,
+      "median_engagement": 5.6205,
+      "total_videos": 186,
+      "viral_rate": 0.24193548387096775
+    },
+    {
+      "publish_day_name": "Thursday",
+      "publish_hour": 1,
+      "median_engagement": 5.4696,
+      "total_videos": 157,
+      "viral_rate": 0.267515923566879
+    },
+    {
+      "publish_day_name": "Saturday",
+      "publish_hour": 21,
+      "median_engagement": 5.3926,
+      "total_videos": 95,
+      "viral_rate": 0.4631578947368421
+    },
+    {
+      "publish_day_name": "Thursday",
+      "publish_hour": 23,
+      "median_engagement": 5.392,
+      "total_videos": 145,
+      "viral_rate": 0.31724137931034485
+    }
+  ]
+}

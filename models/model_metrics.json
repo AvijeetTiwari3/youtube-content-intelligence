@@ -1,0 +1,32 @@
+{
+  "accuracy_pct": 84.85,
+  "roc_auc_score": 0.9324,
+  "precision_viral": 0.9345,
+  "recall_viral": 0.4802,
+  "f1_viral": 0.6344,
+  "test_records": 4991,
+  "feature_importances": {
+    "category_id": 0.1345,
+    "tag_count": 0.1303,
+    "title_caps_ratio": 0.1287,
+    "like_to_view_ratio": 0.1267,
+    "comment_to_view_ratio": 0.1221,
+    "title_char_length": 0.1159,
+    "publish_hour": 0.1002,
+    "title_word_count": 0.0691,
+    "publish_month": 0.0468,
+    "title_sentiment_polarity": 0.0258
+  },
+  "feature_names": [
+    "category_id",
+    "publish_hour",
+    "publish_month",
+    "tag_count",
+    "title_word_count",
+    "title_char_length",
+    "title_caps_ratio",
+    "title_sentiment_polarity",
+    "like_to_view_ratio",
+    "comment_to_view_ratio"
+  ]
+}
